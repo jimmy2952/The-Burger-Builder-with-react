@@ -1,9 +1,8 @@
 .BuildControl {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
-    background-color: #AA6817;
+    margin: 5px 0;
 }
 
 .BuildControl button {
