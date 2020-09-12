@@ -2,7 +2,7 @@ import React from 'react'
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient'
 
 import classes from './Burger.module.css'
-import BurgerBuilder from '../../containers/BurgerBuilder/BurgerBuilder'
+
 
 const Burger = props => {
     let transformedIngredients = Object.keys(props.ingredients)
@@ -24,7 +24,6 @@ const Burger = props => {
             <BurgerIngredient type='bread-top'/>
                 {transformedIngredients}
             <BurgerIngredient type='bread-bottom'/>
-            {console.log(transformedIngredients)}
         </div>
     )
 } 
