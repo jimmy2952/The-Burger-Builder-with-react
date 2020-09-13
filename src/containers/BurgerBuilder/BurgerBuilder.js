@@ -28,7 +28,7 @@ class BurgerBuilder extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://react-burger-builder-afc67.firebaseio.com/ingredients')
+        axios.get('https://react-burger-builder-afc67.firebaseio.com/ingredients.json')
             .then(response => {
                 this.setState({ingredients: response.data})
             })
@@ -103,7 +103,7 @@ class BurgerBuilder extends Component {
             },
             deliveryMethod: 'ASAP'
         }
-        axios.post('/orders', order)
+        axios.post('/orders.json', order)
             .then(response => {
                 //console.log(response)
                 this.setState({loading: false, purchasing: false})
